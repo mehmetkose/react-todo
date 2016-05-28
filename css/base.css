@@ -287,7 +287,7 @@ label[for='toggle-all'] {
 }
 
 #todo-list li .edit {
-	display: none;
+	display: inline;
 }
 
 #todo-list li.editing:last-child {
