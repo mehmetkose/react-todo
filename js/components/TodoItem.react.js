@@ -37,16 +37,11 @@ var TodoItem = React.createClass({
       input =
         <TodoTextInput
           className="edit"
-          onSave={this._onSave}
-          value={todo.text}
+          onSave="{this._onSave}"
+          value="{todo.text}"
         />;
     }
 
-    // List items should get the class 'editing' when editing
-    // and 'completed' when marked as completed.
-    // Note that 'completed' is a classification while 'complete' is a state.
-    // This differentiation between classification and state becomes important
-    // in the naming of view actions toggleComplete() vs. destroyCompleted().
     return (
       <li
         className={classNames({

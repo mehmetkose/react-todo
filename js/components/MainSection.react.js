@@ -38,9 +38,7 @@ var MainSection = React.createClass({
 
     return (
       <section id="main">
-        <input
-          id="toggle-all"
-          type="checkbox"
+        <input id="toggle-all" type="checkbox"
           onChange={this._onToggleCompleteAll}
           checked={this.props.areAllComplete ? 'checked' : ''}
         />
